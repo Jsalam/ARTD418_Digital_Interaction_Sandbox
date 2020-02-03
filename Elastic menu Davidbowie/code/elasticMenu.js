@@ -266,3 +266,4 @@ var elasticMenu = function (p5){
 		backBone.disksClicked();
 	};
 };
+var sessionB = new p5(elasticMenu, document.getElementById('myElasticMenu')); 
