@@ -28,14 +28,6 @@ anime({
     easing: 'easeOutQuad'
 });
 
-// By query selector
-let myRows = document.querySelectorAll(".row1")
-anime({
-    targets: myRows,
-    translateX: 290,
-    easing: 'easeOutQuad'
-});
-
 
 // TRANSFORMATIONS
 let transform = document.querySelectorAll(".box3")
