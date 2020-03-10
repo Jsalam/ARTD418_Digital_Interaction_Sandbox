@@ -1,0 +1,17 @@
+body {
+    background-color: violet;
+}
+
+.fixPosition {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    background-color: coral;
+}
+
+.extension {
+    height: 3000px;
+    background-color: blueviolet;
+}
