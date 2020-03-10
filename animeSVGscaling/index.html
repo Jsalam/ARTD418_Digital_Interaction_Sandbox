@@ -24,7 +24,7 @@
 
         <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-500 -150 993 300" style="enable-background:new 0 0 993 100;" xml:space="preserve">
 		<style type="text/css">
-			.st0{fill:blueviolet;stroke:none;}
+			.st0{fill:#a700d977;stroke:none;}
 		</style>
 		<g>
 			<path class="st0" d="M-490.8,14.5c3.9,2.4,9.7,4.4,15.7,4.4c9,0,14.2-4.7,14.2-11.6c0-6.4-3.6-10-12.8-13.5
@@ -91,7 +91,28 @@
 
     </div>
 
-    <div class="extension"></div>
+    <div class="extension">
+        <p>This scale system requires:
+            <ul>
+                <li>1) In Illustrator: Enclose the text or illustration into an artboard barely larger than the text dimensions. The arboard dimensions are the <i>viewbox</i> dimensions in the SVG output file.</li>
+                <li>2) In Illustrator: Position the center of the text or illustation at the upper-left corner of the canvas. See image below.</li>
+                <li><img src="images/illScreenshot.png" width="800px"></li>
+                <li>3) Export your file from Illustrator as an SVG. In HTML you will need the CSS file <i>myCssFile.css</i>, and the javaScript file <i>script.js</i> used in this example. Copy the SVG code into your HTML file inside a div with the class "fixPosition".</li>
+                <li>4) In HTML: Look for the <i>viewbox</i> property in the heading of your SVG code. It should look like <i>viewbox{0, 0, 500, 300}</i> corresponding to the X, Y, WIDTH, and HEIGHT of the area where the SVG will be displayed.</li>
+                <ul>
+                    <li>a) Change the X origin to the negative value of the width/2 </li>
+                    <li>b) Change the Y origin to the negative value of the height/2 </li>
+                    <li>c) Change the Width to twice its value </li>
+                    <li>d) Change the Height to twice its value </li>
+                    <p>The result should look like: <i>viewbox{-250, -150, 1000, 600}.</i> You may accomodate these numbers to mask the SVG.</p>
+                </ul>
+                <li>5) In HTML, if the content of the div containing the SVG is not large enough to enable the scroll, add another div right after with the class <i>extension</i>. By default it comes with a height of 3000 pixels but you can change that in
+                    the CSS file.</li>
+            </ul>
+        </p>
+        <p>This is the folder structure of this example</p>
+        <img src="images/folderstr.png">
+    </div>
 
     <!-- codigo javaScript -->
     <script src="src/script.js"></script>
