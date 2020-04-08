@@ -6,7 +6,7 @@ var p5SketchB = function(p5) {
         ["Brian Zolnierczyk", "https://brianzol.github.io/brian_repository/", "Brian Zolnierczyk", "Image"],
         ["Benjamin Tschetter", "https://bentschetter.github.io/bens-laptop/", "Benjamin Tschetter", "Image"],
         ["Christopher Duong", "https://chrisduong12.github.io/bao40/", "Christopher Duong", "Image"],
-        ["Michael Ruth", ">_<", "Michael Ruth", "Image"],
+        ["Michael Ruth", "https://mruth202.github.io/", "Michael Ruth", "Image"],
         ["Kim Nahee", "https://nh1998.github.io/Nahee/", "Kim Nahee", "Image"],
         ["Kobi Naujokas", "https://knaujokas.github.io/Kobi-Repository/", "Kobi Naujokas", "Image"],
         ["McKenzie Zarn", "https://mckenziesz.github.io/KENZ_418/", "McKenzie Zarn", "Image"],
