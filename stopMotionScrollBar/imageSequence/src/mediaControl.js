@@ -23,8 +23,8 @@ let optionsImageSequence_1 = {
     amount: 224,
 
     // Set the coordinates where you want to reproduce the image sequence
-    startRollingAt: 0,
-    finishRollingAt: 255,
+    startRollingAt: 150,
+    finishRollingAt: 1255,
 
     // relative to 'window' or 'wheel' By default it is relative to wheel
     relativeTo: "wheel",
