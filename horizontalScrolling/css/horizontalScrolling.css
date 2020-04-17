@@ -17,11 +17,10 @@ body {
     overflow-x: hidden;
     position: absolute;
     /* DELETE the lines below if needed */
-    border-style: dotted;
+    /* border-style: dotted; */
 }
 
 .horizontal-scroll-wrapper>div {
-    background-color: aqua;
     /* The height of each div*/
     width: 1024px;
     /* The width of each div*/
@@ -31,5 +30,5 @@ body {
     /* set the wrapper's width size into the translateY function*/
     transform: rotate(90deg) translateY(-768px);
     /* DELETE the lines below if needed */
-    border-style: solid;
+    /* border-style: solid; */
 }
