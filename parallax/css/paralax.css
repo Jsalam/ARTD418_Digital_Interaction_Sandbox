@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     /* PERSPECTIVE */
-    perspective: 1501px;
+    perspective: 1000px;
 }
 
 .perspective-container {
@@ -40,12 +40,12 @@ body {
 
 #layer-1 {
     /* BACKGROUND DEPTH AND SCALE */
-    transform: translate3d(0px, 0px, -854px) scale(2, 2);
+    transform: translate3d(0px, 0px, -900px) scale(1.2, 1.2);
 }
 
 #layer-2 {
     /* FOREGROUND DEPTH AND SCALE */
-    transform: translate3d(0px, 0px, -213px) scale(1.4, 1.4);
+    transform: translate3d(0px, 0px, -100px) scale(1.2, 1.2);
 }
 
 .content-container {
