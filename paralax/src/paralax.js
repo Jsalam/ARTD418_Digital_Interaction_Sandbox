@@ -8,8 +8,8 @@ class Paralax {
         this.windowHeight = window.innerWidth;
         this.halfWidth = this.windowWidth / 2;
         this.halfHeight = this.windowHeight / 2;
-        this.maxYRotation = 8;
-        this.maxXRotation = 15;
+        this.maxYRotation = 32;
+        this.maxXRotation = 65;
         this.init();
         document.addEventListener('mousemove', this.rotateLayers.bind(this));
     }

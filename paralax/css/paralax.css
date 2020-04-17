@@ -7,7 +7,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 70%;
     height: 70%;
     background-color: #000000;
     background-repeat: no-repeat;
@@ -15,6 +15,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     overflow-y: hidden;
+    /* PERSPECTIVE */
     perspective: 1000px;
 }
 
@@ -38,10 +39,12 @@ body {
 }
 
 #layer-1 {
+    /* BACKGROUND DEPTH AND SCALE */
     transform: translate3d(0px, 0px, -900px) scale(1.2, 1.2);
 }
 
 #layer-2 {
+    /* FOREGROUND DEPTH AND SCALE */
     transform: translate3d(0px, 0px, -100px) scale(1.2, 1.2);
 }
 
@@ -58,13 +61,4 @@ body {
     transform: translate3d(-50%, -50%, -170px);
     text-align: center;
     color: white;
-}
-
-h2 {
-    font-size: 4vw;
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 5vw;
 }

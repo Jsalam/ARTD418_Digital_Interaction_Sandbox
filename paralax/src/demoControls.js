@@ -25,20 +25,20 @@ function addSlider(id, min, max, name, step) {
 
 let perspectiveSLD = addSlider('perspective', 0, 2000, "perspective", 1);
 let bkgndScale = addSlider('scaleImage1', 0, 2, "Scale Bckgnd", 0.1);
-let bkgndDepth = addSlider('depthImage1', 0, -1200, "Depth Bckgnd", 1);
+let bkgndDepth = addSlider('depthImage1', -1200, 0, "Depth Bckgnd", 1);
 let frgndScale = addSlider('scaleImage2', 0, 2, "Scale Frgrnd", 0.1);
-let frgndDepth = addSlider('depthImage2', 0, -1200, "Depth Frgrnd", 1);
+let frgndDepth = addSlider('depthImage2', -1200, 0, "Depth Frgrnd", 1);
 
 let currentBkgndScale = bkgndScale.children[0].value;
 let currentBkgndDepth = -900;
 let currentFrgndScale = frgndScale.children[0].value;
 let currentFrgndDepth = -200;
 
-perspectiveSLD.onchange = changePerspective;
-bkgndScale.onchange = changeBkgnd;
-bkgndDepth.onchange = changeBkgnd;
-frgndScale.onchange = changeFrgnd;
-frgndDepth.onchange = changeFrgnd;
+perspectiveSLD.children[0].onchange = changePerspective;
+bkgndScale.children[0].onchange = changeBkgnd;
+bkgndDepth.children[0].onchange = changeBkgnd;
+frgndScale.children[0].onchange = changeFrgnd;
+frgndDepth.children[0].onchange = changeFrgnd;
 
 function changePerspective() {
     let element = document.querySelector(".paralaxContainer");
@@ -54,7 +54,6 @@ function changeBkgnd() {
     element.style.transform = "translate3d(0px, 0px," + currentBkgndDepth + "px) scale(" + currentBkgndScale + "," + currentBkgndScale + ")";
     bkgndScale.children[1].textContent = bkgndScale.children[0].name + "  " + currentBkgndScale;
     bkgndDepth.children[1].textContent = bkgndDepth.children[0].name + "  " + currentBkgndDepth;
-    changePerspective();
 }
 
 function changeFrgnd() {
